@@ -14,6 +14,10 @@
 		076A52DD1F9436A7008A4E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076A52DB1F9436A7008A4E86 /* LaunchScreen.storyboard */; };
 		076A52E81F9436A7008A4E86 /* Side_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A52E71F9436A7008A4E86 /* Side_MenuTests.swift */; };
 		076A52F31F9436A7008A4E86 /* Side_MenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A52F21F9436A7008A4E86 /* Side_MenuUITests.swift */; };
+		076A53011F943984008A4E86 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A53001F943984008A4E86 /* SideMenuTableViewController.swift */; };
+		076A530D1F94623C008A4E86 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A530A1F94623C008A4E86 /* SlideInPresentationController.swift */; };
+		076A530E1F94623C008A4E86 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A530B1F94623C008A4E86 /* SlideInPresentationAnimator.swift */; };
+		076A530F1F94623C008A4E86 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A530C1F94623C008A4E86 /* SlideInPresentationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		076A52EE1F9436A7008A4E86 /* Side MenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Side MenuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		076A52F21F9436A7008A4E86 /* Side_MenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side_MenuUITests.swift; sourceTree = "<group>"; };
 		076A52F41F9436A7008A4E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076A53001F943984008A4E86 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		076A530A1F94623C008A4E86 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
+		076A530B1F94623C008A4E86 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		076A530C1F94623C008A4E86 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,9 @@
 		076A52D11F9436A7008A4E86 /* Side Menu */ = {
 			isa = PBXGroup;
 			children = (
+				076A53101F94623F008A4E86 /* Presentation */,
+				076A53021F94398B008A4E86 /* View Controllers */,
 				076A52D21F9436A7008A4E86 /* AppDelegate.swift */,
-				076A52D41F9436A7008A4E86 /* ViewController.swift */,
 				076A52D61F9436A7008A4E86 /* Main.storyboard */,
 				076A52D91F9436A7008A4E86 /* Assets.xcassets */,
 				076A52DB1F9436A7008A4E86 /* LaunchScreen.storyboard */,
@@ -123,6 +132,25 @@
 				076A52F41F9436A7008A4E86 /* Info.plist */,
 			);
 			path = "Side MenuUITests";
+			sourceTree = "<group>";
+		};
+		076A53021F94398B008A4E86 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				076A52D41F9436A7008A4E86 /* ViewController.swift */,
+				076A53001F943984008A4E86 /* SideMenuTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		076A53101F94623F008A4E86 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				076A530B1F94623C008A4E86 /* SlideInPresentationAnimator.swift */,
+				076A530A1F94623C008A4E86 /* SlideInPresentationController.swift */,
+				076A530C1F94623C008A4E86 /* SlideInPresentationManager.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				076A52D51F9436A7008A4E86 /* ViewController.swift in Sources */,
+				076A530E1F94623C008A4E86 /* SlideInPresentationAnimator.swift in Sources */,
+				076A53011F943984008A4E86 /* SideMenuTableViewController.swift in Sources */,
+				076A530D1F94623C008A4E86 /* SlideInPresentationController.swift in Sources */,
+				076A530F1F94623C008A4E86 /* SlideInPresentationManager.swift in Sources */,
 				076A52D31F9436A7008A4E86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
